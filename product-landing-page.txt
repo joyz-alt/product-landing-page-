@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=content-width initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Original Trombones</title>
+
+</head>
+
+<body>
+    <header id="header" class="header">
+        <img id="header-img" class="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"></img>
+        <nav id="nav-bar" class="nav-bar">
+            <ul>
+                <li><a href="#features">Features </a></li>
+                <li><a href="#how_it_works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr></hr>
+
+    <section class="email">
+        <h1>Handcrafted, home-made masterpieces</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+                <input id="submit" type="submit" value="Get started" class="btn">
+            </form>
+    </section>
+    
+    <hr>
+
+    <div class="waves">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00B4DB" />
+                    <stop offset="50%" stop-color="#0083B0" />
+                    <stop offset="100%" stop-color="#224488" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#grad1)" d="M0,256 C320,96 640,320 960,192 C1280,64 1440,256 1440,320 L0,320 Z"></path>
+        </svg>
+    </div>
+    <div class="features-container">
+        <section id="features">
+            <h1>Fast Shipping</h1>
+            <p>We make sure you receive your trombone as soon as we have finished making it.</p>
+            <h1>Quality Assurance</h1>
+            <p>For every purchase you make, we will ensure there are no damages or faults.</p>
+        </section>
+    </div>
+    <div class="waves">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00B4DB" />
+                    <stop offset="50%" stop-color="#0083B0" />
+                    <stop offset="100%" stop-color="#224488" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#grad2)" d="M0,96 C360,128 720,32 1080,64 C1440,96 1440,0 1440,0 L0,0 Z"></path>
+        </svg>
+    </div>
+
+
+    <div>
+        <section id="how_it_works" class="video-section">
+            <h1>See them in action!</h1>
+            <iframe id="video" class="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc">
+            </iframe>
+        </section>
+    </div>
+
+    <section id="pricing" class="pricing">
+        
+            <div class="product" id="tenor">
+                <div class="level">
+                    <h3>Tenor Trombone</h3>
+                </div>
+                <h2>600$</h2>
+                <ol>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                </ol>
+                <button class="btn">Select
+                </button>
+            </div>
+
+            <div class="product" id="bass">
+                <div class="level">
+                    <h3>Bass Trombone</h3>
+                </div>
+                <h2>900$</h2>
+                <ol>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                </ol>
+                <button class="btn">Select
+                </button>
+
+            </div>
+
+
+
+            <div class="product" id="valve">
+                <div class="level">
+                    <h3>Valve Trombone</h3>
+                </div>
+                <h2>1200$</h2>
+                <ol>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                    <li>Very well done</li>
+                </ol>
+                <button class="btn">Select
+                </button>
+            </div>
+        </section>
+</body>
+
+</html>
+
+
+
+<style>
+    /* html */
+
+
+
+    :root {
+        --color-main: rgb(98, 67, 170);
+        --color-navbar: #eeeeeefa;
+        --color-background: #eee;
+        --color-font: #222;
+        font-size: calc(0.5em + 1vw);
+    }
+
+
+    /* html */
+
+
+    /*body*/
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    }
+
+
+    /*body*/
+
+    /*header*/
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        top: 0;
+        background-color: var(--color-navbar);
+        z-index: 1000;
+        padding:10px;
+    }
+
+
+    .header-img {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 400px;
+        background-color: var(--color-navbar);
+        padding-left:25px
+    }
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: var(--color-navbar);
+    }
+
+    .nav-bar ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 25px;
+    }
+
+    .nav-bar li {
+        margin-left: 20px;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+        color: var(--color-font)
+    }
+
+    /*header*/
+
+/*hr*/
+
+hr{
+    background: linear-gradient(to right, #00B4DB 0%, #0083B0 50%, #224488 100%);
+    border:none;
+    height: 1.4px
+}
+
+
+/*hr*/
+
+
+    /*email*/
+
+
+    .email {
+        background-color: var(--color-background);
+        padding:55px;
+        text-align: center;
+    }
+
+    .email h1 {
+        color: var(--color-font);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .email form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .email input[type="email"] {
+        padding: 10px 15px;
+        font-size: 1rem;
+        border: 2px solid var(--color-main);
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .email input[type="submit"] {
+        background: var(--color-main);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .email input[type="submit"]:hover {
+        background: rgb(121, 92, 210);
+    }
+
+
+    /*email*/
+
+    /*waves*/
+
+    .waves{
+        background-color:var(--color-background)
+    }
+
+    .waves svg {
+        width: 100%;
+        height: 100px;
+        display: block;
+    }
+
+    .waves path {
+        fill: url(#grad1);
+    }
+
+
+    /*waves*/
+
+
+    /*features-container*/
+
+    .features-container {
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(to right, #00B4DB 0%, #0083B0 50%, #224488 100%);
+        padding: 75px 20px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+
+    }
+
+    .features-container section {
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /*features-container*/
+
+    /* how it works */
+
+    .video-section{
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 50px; 
+        background-color: var(--color-background);
+    }
+
+    .video{
+        height: 25vw;
+        width:50vw;
+    }
+
+
+
+    /* how it works */
+
+/*pricing*/
+
+
+        .pricing{
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            padding-bottom: 10em;
+
+        }
+
+
+/*pricing */
+
+
+
+    @media (max-width: 600px) {
+        #nav-bar ul {
+            flex-direction: column;
+        }
+
+        .btn {
+            font-size: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+
+    }
+
+
+
+    .pricing {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--color-background);
+   }
+</Style>
