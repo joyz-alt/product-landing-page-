@@ -14,9 +14,15 @@
 <body>
     <header id="header" class="header">
         <a href="#" class="logo-link"><img id="header-img" class="header-img"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
-        </img></a>
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
+            </img></a>
+
         <nav id="nav-bar" class="nav-bar">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li><a href="#features">Features </a></li>
                 <li><a href="#how_it_works">How It Works</a></li>
@@ -251,11 +257,17 @@
         font-size: 0.8em;
     }
 
+
+    @media (max-width:625px) {
+        .nav-bar {
+            display: none
+        }
+    }
+
     /*header*/
 
 
     /*email*/
-
 
     .email-section {
         background-color: var(--color-background);
@@ -320,6 +332,14 @@
     }
 
 
+    @media(max-width:625px){
+        .waves svg{
+            height:160px;
+        }
+    }
+    
+
+
     /*waves*/
 
 
@@ -374,8 +394,8 @@
     }
 
     .video {
-        height: 25vw;
-        width: 50vw;
+        height: 60vw;
+        width: 90vw;
         margin-bottom: 1em;
 
     }
