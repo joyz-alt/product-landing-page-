@@ -112,10 +112,10 @@
             <div class="product-title">Tenor Trombone</div>
             <h2>600$</h2>
             <ol>
-                <li>Very well done</li>
-                <li>Very well done</li>
-                <li>Very well done</li>
-                <li>Very well done</li>
+                <li>Exceptional craftsmanship</li>
+                <li>Superior build quality</li>
+                <li>Elegant and durable</li>
+                <li>Crafted to perfection</li>
             </ol>
             <button class="product-btn">Select
             </button>
@@ -125,26 +125,23 @@
             <div class="product-title">Tenor Trombone</div>
             <h2>900$</h2>
             <ol>
-                <li>Very well done</li>
-                <li>Very well done</li>
-                <li>Very well done</li>
-                <li>Very well done</li>
+                <li>Unmatched performance</li>
+                <li>Handcrafted excellence</li>
+                <li>Reliable and robust</li>
+                <li>Trusted by professionals</li>
             </ol>
             <button class="product-btn">Select
             </button>
-
         </div>
-
-
 
         <div class="product" id="valve">
             <div class="product-title">Tenor Trombone</div>
             <h2>1200$</h2>
             <ol>
-                <li>Very well done</li>
-                <li>Very well done</li>
-                <li>Very well done</li>
-                <li>Very well done</li>
+                <li>Premium design</li>
+                <li>Built with precision</li>
+                <li>Elegant and durable</li>
+                <li>Trusted by professionals</li>
             </ol>
             <button class="product-btn">Select
             </button>
@@ -332,12 +329,12 @@
     }
 
 
-    @media(max-width:625px){
-        .waves svg{
-            height:160px;
+    @media(max-width:625px) {
+        .waves svg {
+            height: 160px;
         }
     }
-    
+
 
 
     /*waves*/
@@ -359,7 +356,6 @@
         width: 80vw;
         font-size: 0.8rem;
         justify-content: flex-start;
-        padding: ;
     }
 
     .feature i {
@@ -394,10 +390,27 @@
     }
 
     .video {
-        height: 60vw;
-        width: 90vw;
-        margin-bottom: 1em;
+        width: 80%;
+        max-width: 800px;
+        aspect-ratio: 16/9;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
+    @media (max-width: 768px) {
+        .video {
+            width: 90%;
+            max-width: 600px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .video {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 
 
